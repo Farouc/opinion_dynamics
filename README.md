@@ -60,6 +60,12 @@ Run EVT pipeline:
 python experiments/run_evt.py --config config/default.yaml
 ```
 
+Write outputs to a custom folder (recommended for multi-run campaigns):
+
+```bash
+python experiments/sweep_rho.py --config config/default.yaml --results-dir results/campaign_2026-04-10/erdos
+```
+
 ## Key Outputs
 
 Saved under `results/`:

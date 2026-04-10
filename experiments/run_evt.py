@@ -33,6 +33,12 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Disable tqdm progress bars.",
     )
+    parser.add_argument(
+        "--results-dir",
+        type=Path,
+        default=ROOT / "results",
+        help="Base directory where raw/ and figures/ outputs are written.",
+    )
     return parser.parse_args()
 
 
@@ -56,8 +62,8 @@ def main() -> None:
         show_progress=not args.no_progress,
     )
 
-    raw_dir = ensure_dir(ROOT / "results" / "raw")
-    fig_dir = ensure_dir(ROOT / "results" / "figures")
+    raw_dir = ensure_dir(Path(args.results_dir) / "raw")
+    fig_dir = ensure_dir(Path(args.results_dir) / "figures")
 
     npz_path = raw_dir / "evt_results.npz"
     np.savez(npz_path, **results)
