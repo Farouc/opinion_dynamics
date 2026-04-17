@@ -48,6 +48,93 @@ Run one trajectory and plot `m(t)`:
 python experiments/run_simulation.py --config config/default.yaml
 ```
 
+## Two-Camp Zealot Extension
+
+The codebase now supports two competing zealot camps:
+- positive zealots fixed at `+1`
+- negative zealots fixed at `-1`
+- free nodes following voter dynamics
+
+### Single Two-Camp Run
+
+```bash
+python experiments/run_two_zealot_simulation.py \
+  --config config/default.yaml \
+  --graph-type erdos_renyi \
+  --n 500 \
+  --p 0.02 \
+  --T 20000 \
+  --burn-in 4000 \
+  --pos-count 20 \
+  --neg-count 30 \
+  --strategy-pos highest_degree \
+  --strategy-neg random \
+  --print-graph-info \
+  --print-magnetization \
+  --results-dir results/two_camp_single
+```
+
+### Tipping Grid (Phase-Diagram Data)
+
+```bash
+python experiments/run_tipping_grid.py \
+  --config config/default.yaml \
+  --graph-type barabasi_albert \
+  --n 800 \
+  --m 3 \
+  --T 30000 \
+  --burn-in 6000 \
+  --n-runs 8 \
+  --n-pos-values 10,20,30,40 \
+  --n-neg-values 10,20,30,40,50 \
+  --strategy-pos random \
+  --strategy-neg random \
+  --results-dir results/two_camp_grid
+```
+
+Plot the saved phase diagram:
+
+```bash
+python experiments/plot_phase_diagram.py \
+  --input-npz results/two_camp_grid/raw/tipping_grid_results.npz \
+  --boundary-json results/two_camp_grid/raw/tipping_grid_boundary.json \
+  --output-dir results/two_camp_grid/figures
+```
+
+### Strength/Strategy Comparison
+
+```bash
+python experiments/run_strength_comparison.py \
+  --config config/default.yaml \
+  --graph-type barabasi_albert \
+  --n 600 \
+  --m 3 \
+  --T 25000 \
+  --burn-in 5000 \
+  --n-pos-values 15 \
+  --n-neg-values 20,25 \
+  --strategy-pos-list random,highest_degree,highest_eigenvector,farthest_spread \
+  --strategy-neg-list random,highest_degree \
+  --n-runs 10 \
+  --results-dir results/two_camp_strength
+```
+
+### Export Dataset for Regression/Symbolic Search
+
+```bash
+python experiments/export_symbolic_dataset.py \
+  --graph-types fully_connected,erdos_renyi,barabasi_albert \
+  --n-values 150,250 \
+  --erdos-p-values 0.01,0.02 \
+  --barabasi-m-values 2,3 \
+  --n-pos-values 6,10,14 \
+  --n-neg-values 6,10,14,18 \
+  --strategy-pos-list random,highest_degree,highest_eigenvector,farthest_spread,wl_cover \
+  --strategy-neg-list random,highest_degree \
+  --n-runs 6 \
+  --results-dir results/two_camp_symbolic
+```
+
 Phase-1 interactive runs (override graph/rho/size directly from terminal):
 
 ```bash

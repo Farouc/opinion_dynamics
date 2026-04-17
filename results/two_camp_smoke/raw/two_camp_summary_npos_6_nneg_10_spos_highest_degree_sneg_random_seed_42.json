@@ -1,0 +1,57 @@
+{
+  "config": {
+    "graph_type": "fully_connected",
+    "n_nodes": 80,
+    "n_pos": 6,
+    "n_neg": 10,
+    "rho_pos": 0.075,
+    "rho_neg": 0.125,
+    "strategy_pos": "highest_degree",
+    "strategy_neg": "random",
+    "strategy_kwargs_pos": {},
+    "strategy_kwargs_neg": {},
+    "T": 2000,
+    "burn_in": 500,
+    "seed": 42,
+    "threshold": 0.0
+  },
+  "asymptotic_observables": {
+    "mean_magnetization": -0.48931666666666673,
+    "var_magnetization": 0.01758961638888892,
+    "dominance_sign": -1,
+    "victory_indicator": 0,
+    "mean_positive_fraction": 0.2553416666666664,
+    "mean_negative_fraction": 0.7446583333333336
+  },
+  "tipping_observables": {
+    "mean_magnetization": -0.48931666666666673,
+    "var_magnetization": 0.01758961638888892,
+    "dominance_sign": -1,
+    "victory_indicator": 0,
+    "time_to_first_sign_change": 13,
+    "time_to_first_crossing_above_threshold": 13,
+    "fraction_time_above_threshold": 0.0,
+    "fraction_time_below_threshold": 1.0
+  },
+  "flip_activity": null,
+  "pos_nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "neg_nodes": [
+    8,
+    18,
+    21,
+    28,
+    33,
+    41,
+    52,
+    72,
+    77,
+    79
+  ]
+}

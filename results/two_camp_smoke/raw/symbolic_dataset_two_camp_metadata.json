@@ -1,0 +1,35 @@
+{
+  "n_rows": 16,
+  "graph_specs": [
+    {
+      "graph_type": "fully_connected",
+      "n": 80
+    },
+    {
+      "graph_type": "erdos_renyi",
+      "n": 80,
+      "p": 0.08
+    }
+  ],
+  "n_pos_values": [
+    4,
+    6
+  ],
+  "n_neg_values": [
+    4,
+    8
+  ],
+  "strategy_pos_list": [
+    "random",
+    "highest_degree"
+  ],
+  "strategy_neg_list": [
+    "random"
+  ],
+  "T": 2500,
+  "burn_in": 500,
+  "n_runs": 2,
+  "threshold": 0.0,
+  "wl_n_iter": 3,
+  "seed": 42
+}

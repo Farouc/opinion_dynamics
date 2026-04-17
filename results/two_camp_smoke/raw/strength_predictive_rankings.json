@@ -1,0 +1,52 @@
+{
+  "ranking": [
+    {
+      "candidate": "mean_delta_psi_centrality",
+      "pearson_corr": 1.0,
+      "spearman_corr": 0.9999999999999999,
+      "abs_spearman": 0.9999999999999999
+    },
+    {
+      "candidate": "mean_delta_psi_degree",
+      "pearson_corr": 1.0,
+      "spearman_corr": 0.9999999999999999,
+      "abs_spearman": 0.9999999999999999
+    },
+    {
+      "candidate": "mean_delta_psi_degree_norm",
+      "pearson_corr": 1.0,
+      "spearman_corr": 0.9999999999999999,
+      "abs_spearman": 0.9999999999999999
+    },
+    {
+      "candidate": "mean_delta_psi_dispersion",
+      "pearson_corr": -1.0,
+      "spearman_corr": -0.9999999999999999,
+      "abs_spearman": 0.9999999999999999
+    },
+    {
+      "candidate": "mean_delta_psi_hybrid",
+      "pearson_corr": 1.0,
+      "spearman_corr": 0.9999999999999999,
+      "abs_spearman": 0.9999999999999999
+    },
+    {
+      "candidate": "mean_delta_psi_rho",
+      "pearson_corr": NaN,
+      "spearman_corr": NaN,
+      "abs_spearman": NaN
+    },
+    {
+      "candidate": "mean_delta_psi_size",
+      "pearson_corr": NaN,
+      "spearman_corr": NaN,
+      "abs_spearman": NaN
+    },
+    {
+      "candidate": "mean_delta_psi_wl",
+      "pearson_corr": NaN,
+      "spearman_corr": NaN,
+      "abs_spearman": NaN
+    }
+  ]
+}
