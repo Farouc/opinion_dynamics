@@ -48,6 +48,40 @@ Run one trajectory and plot `m(t)`:
 python experiments/run_simulation.py --config config/default.yaml
 ```
 
+Phase-1 interactive runs (override graph/rho/size directly from terminal):
+
+```bash
+# Fully connected graph with live magnetization prints
+python experiments/run_simulation.py \
+  --config config/default.yaml \
+  --graph-type fully_connected \
+  --n 500 \
+  --rho 0.10 \
+  --T 20000 \
+  --print-graph-info \
+  --print-magnetization \
+  --magnetization-interval 1000 \
+  --results-dir results/phase1_fc
+
+# Erdos-Renyi
+python experiments/run_simulation.py \
+  --config config/default.yaml \
+  --graph-type erdos_renyi \
+  --n 1000 \
+  --p 0.01 \
+  --rho 0.05 \
+  --results-dir results/phase1_er
+
+# Barabasi-Albert
+python experiments/run_simulation.py \
+  --config config/default.yaml \
+  --graph-type barabasi_albert \
+  --n 1000 \
+  --m 3 \
+  --rho 0.05 \
+  --results-dir results/phase1_ba
+```
+
 Run phase-transition sweep:
 
 ```bash
@@ -59,6 +93,63 @@ Run EVT pipeline:
 ```bash
 python experiments/run_evt.py --config config/default.yaml
 ```
+
+Run fully-connected convergence-time symbolic regression (JSON + figure):
+
+```bash
+python experiments/fit_convergence_formula_fc.py \
+  --n 400 \
+  --T 80000 \
+  --n-runs 6 \
+  --rho-min 0.05 \
+  --rho-max 0.50 \
+  --rho-step 0.05 \
+  --stable-window 500 \
+  --results-dir results/fc_symbolic_v1
+```
+
+Use true PySR symbolic search (operators like `+ - * / log exp`) by switching backend:
+
+```bash
+python experiments/fit_convergence_formula_fc.py \
+  --regression-method pysr \
+  --pysr-niterations 800 \
+  --pysr-population-size 60 \
+  --pysr-maxsize 24 \
+  --pysr-binary-operators "+,-,*,/" \
+  --pysr-unary-operators "log,exp" \
+  --results-dir results/fc_symbolic_pysr
+```
+
+Note: `pysr` is optional and typically requires both the Python package and Julia runtime.
+
+This saves:
+
+- `results/fc_symbolic_v1/raw/fc_convergence_dataset.json`
+- `results/fc_symbolic_v1/raw/fc_symbolic_model.json`
+- `results/fc_symbolic_v1/figures/fc_real_vs_symbolic_prediction.png`
+
+Multi-N PySR protocol (fit `tau(N, rho)` and evaluate on held-out N):
+
+```bash
+python experiments/pysr_tau_multin.py \
+  --n-values 100,200,300,400,500 \
+  --rho-values 0.05,0.10,0.15,0.20,0.25,0.30,0.35,0.40,0.45,0.50 \
+  --n-seeds 5 \
+  --T-max 100000 \
+  --stable-window 500 \
+  --test-n-values 150,250 \
+  --test-seeds 5 \
+  --results-dir results/fc_tau_multin_pysr
+```
+
+This saves:
+
+- `results/fc_tau_multin_pysr/raw/fc_tau_multin_training_dataset.json`
+- `results/fc_tau_multin_pysr/raw/fc_tau_multin_pysr_model.json`
+- `results/fc_tau_multin_pysr/raw/fc_tau_multin_eval_dataset.json`
+- `results/fc_tau_multin_pysr/figures/rho_vs_tau_real_vs_pysr_N_150.png`
+- `results/fc_tau_multin_pysr/figures/rho_vs_tau_real_vs_pysr_N_250.png`
 
 Write outputs to a custom folder (recommended for multi-run campaigns):
 

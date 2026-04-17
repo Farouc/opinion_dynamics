@@ -31,6 +31,8 @@ def run_simulation(
     record: bool = True,
     zealot_state: int = +1,
     show_progress: bool = True,
+    print_magnetization: bool = False,
+    magnetization_interval: int = 1000,
 ):
     """Run zealot voter dynamics and record magnetization time series.
 
@@ -62,6 +64,8 @@ def run_simulation(
         raise ValueError("T must be strictly positive.")
     if burn_in < 0:
         raise ValueError("burn_in must be non-negative.")
+    if magnetization_interval <= 0:
+        raise ValueError("magnetization_interval must be strictly positive.")
 
     G_int = _ensure_integer_graph(G)
     n = G_int.number_of_nodes()
@@ -86,9 +90,24 @@ def run_simulation(
         disable=not show_progress,
     )
 
+    cumulative_m = 0.0
     for t in iterator:
         step_voter(G_int, states, zealot_mask, rng)
-        m_series[t] = magnetization(states)
+        m_t = magnetization(states)
+        m_series[t] = m_t
+        cumulative_m += m_t
+
+        if print_magnetization and (
+            t == 0
+            or (t + 1) % magnetization_interval == 0
+            or t == T - 1
+        ):
+            m_running = cumulative_m / float(t + 1)
+            tqdm.write(
+                f"[magnetization] step={t + 1}/{T} "
+                f"m(t)={m_t:.6f} running_mean={m_running:.6f}"
+            )
+
         if record:
             trajectory[t] = states
 

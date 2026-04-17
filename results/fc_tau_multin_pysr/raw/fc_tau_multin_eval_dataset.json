@@ -1,0 +1,1631 @@
+{
+  "experiment": "fc_tau_multin_evaluation",
+  "config": {
+    "test_n_values": [
+      150,
+      250
+    ],
+    "rho_values": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5
+    ],
+    "test_seeds": 5,
+    "T_max": 100000,
+    "stable_window": 500,
+    "tol": 1e-12
+  },
+  "seed_records": [
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.05,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 2123,
+      "steps_simulated": 2622,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 385379895
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.05,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 6231,
+      "steps_simulated": 6730,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 1060837206
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.05,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 4317,
+      "steps_simulated": 4816,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 404210478
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.05,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 5898,
+      "steps_simulated": 6397,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 708371559
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.05,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 3955,
+      "steps_simulated": 4454,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 1418625643
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.1,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 4358,
+      "steps_simulated": 4857,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 310363331
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.1,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 2509,
+      "steps_simulated": 3008,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 1455355983
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.1,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 2739,
+      "steps_simulated": 3238,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 222056181
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.1,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 1746,
+      "steps_simulated": 2245,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 376207307
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.1,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 3511,
+      "steps_simulated": 4010,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 1261957108
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.15,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 4125,
+      "steps_simulated": 4624,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 1703992270
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.15,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 4941,
+      "steps_simulated": 5440,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 366345609
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.15,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 2108,
+      "steps_simulated": 2607,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 644229612
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.15,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 3062,
+      "steps_simulated": 3561,
+      "final_magnetization": 0.9999999999999986,
+      "seed": 1986680325
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.15,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 1960,
+      "steps_simulated": 2459,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 2125329542
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.2,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 1783,
+      "steps_simulated": 2282,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 1247819294
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.2,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 1652,
+      "steps_simulated": 2151,
+      "final_magnetization": 0.9999999999999989,
+      "seed": 960007120
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.2,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 2387,
+      "steps_simulated": 2886,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 744897232
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.2,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 4830,
+      "steps_simulated": 5329,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 1315230481
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.2,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 3792,
+      "steps_simulated": 4291,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 1268981354
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.25,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 776,
+      "steps_simulated": 1275,
+      "final_magnetization": 0.9999999999999989,
+      "seed": 632977320
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.25,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 2034,
+      "steps_simulated": 2533,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 48970939
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.25,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 2192,
+      "steps_simulated": 2691,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 325340136
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.25,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 2521,
+      "steps_simulated": 3020,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 2058490235
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.25,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 1236,
+      "steps_simulated": 1735,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 897980837
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.3,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 1806,
+      "steps_simulated": 2305,
+      "final_magnetization": 0.9999999999999988,
+      "seed": 1035738743
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.3,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 3707,
+      "steps_simulated": 4206,
+      "final_magnetization": 0.9999999999999988,
+      "seed": 1003105830
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.3,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 1463,
+      "steps_simulated": 1962,
+      "final_magnetization": 0.9999999999999988,
+      "seed": 1680911100
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.3,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 2181,
+      "steps_simulated": 2680,
+      "final_magnetization": 0.9999999999999988,
+      "seed": 139493163
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.3,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 2215,
+      "steps_simulated": 2714,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 177661321
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.35,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 2456,
+      "steps_simulated": 2955,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 592377449
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.35,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 1301,
+      "steps_simulated": 1800,
+      "final_magnetization": 0.999999999999999,
+      "seed": 1045090807
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.35,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 1987,
+      "steps_simulated": 2486,
+      "final_magnetization": 0.9999999999999987,
+      "seed": 1441227900
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.35,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 1338,
+      "steps_simulated": 1837,
+      "final_magnetization": 0.9999999999999988,
+      "seed": 1053785245
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.35,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 1133,
+      "steps_simulated": 1632,
+      "final_magnetization": 0.9999999999999988,
+      "seed": 947401231
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.4,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 1098,
+      "steps_simulated": 1597,
+      "final_magnetization": 0.999999999999999,
+      "seed": 2013966975
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.4,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 1320,
+      "steps_simulated": 1819,
+      "final_magnetization": 0.9999999999999989,
+      "seed": 345785549
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.4,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 744,
+      "steps_simulated": 1243,
+      "final_magnetization": 0.9999999999999989,
+      "seed": 1227776642
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.4,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 1315,
+      "steps_simulated": 1814,
+      "final_magnetization": 0.9999999999999991,
+      "seed": 1164461559
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.4,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 1571,
+      "steps_simulated": 2070,
+      "final_magnetization": 0.999999999999999,
+      "seed": 1016810745
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.45,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 1132,
+      "steps_simulated": 1631,
+      "final_magnetization": 0.9999999999999991,
+      "seed": 1734302300
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.45,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 1310,
+      "steps_simulated": 1809,
+      "final_magnetization": 0.9999999999999991,
+      "seed": 573325870
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.45,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 1734,
+      "steps_simulated": 2233,
+      "final_magnetization": 0.9999999999999989,
+      "seed": 2048211625
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.45,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 1237,
+      "steps_simulated": 1736,
+      "final_magnetization": 0.999999999999999,
+      "seed": 712038999
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.45,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 1665,
+      "steps_simulated": 2164,
+      "final_magnetization": 0.9999999999999989,
+      "seed": 1170388210
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.5,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 772,
+      "steps_simulated": 1271,
+      "final_magnetization": 0.999999999999999,
+      "seed": 1118135469
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.5,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 763,
+      "steps_simulated": 1262,
+      "final_magnetization": 0.9999999999999991,
+      "seed": 1824884134
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.5,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 1429,
+      "steps_simulated": 1928,
+      "final_magnetization": 0.999999999999999,
+      "seed": 942555183
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.5,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 1079,
+      "steps_simulated": 1578,
+      "final_magnetization": 0.999999999999999,
+      "seed": 611085711
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.5,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 948,
+      "steps_simulated": 1447,
+      "final_magnetization": 0.999999999999999,
+      "seed": 46411587
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.05,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 16003,
+      "steps_simulated": 16502,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 780993102
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.05,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 16505,
+      "steps_simulated": 17004,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 1774448394
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.05,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 21275,
+      "steps_simulated": 21774,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 21294869
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.05,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 9656,
+      "steps_simulated": 10155,
+      "final_magnetization": 0.9920000000000008,
+      "seed": 1924490602
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.05,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 18019,
+      "steps_simulated": 18518,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 1165712301
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.1,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 12354,
+      "steps_simulated": 12853,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 301182624
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.1,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 7048,
+      "steps_simulated": 7547,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 648925167
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.1,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 14679,
+      "steps_simulated": 15178,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 1189783557
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.1,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 18233,
+      "steps_simulated": 18732,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 677943770
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.1,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 8212,
+      "steps_simulated": 8711,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 233164628
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.15,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 5592,
+      "steps_simulated": 6091,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 1430200236
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.15,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 4724,
+      "steps_simulated": 5223,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 1443624606
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.15,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 4779,
+      "steps_simulated": 5278,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 255280512
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.15,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 4891,
+      "steps_simulated": 5390,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 603944951
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.15,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 6021,
+      "steps_simulated": 6520,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 523713818
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.2,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 4244,
+      "steps_simulated": 4743,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 1416099324
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.2,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 4218,
+      "steps_simulated": 4717,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 1568297830
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.2,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 5873,
+      "steps_simulated": 6372,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 1561209045
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.2,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 4090,
+      "steps_simulated": 4589,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 2015974417
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.2,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 4937,
+      "steps_simulated": 5436,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 1650657918
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.25,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 3081,
+      "steps_simulated": 3580,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 688653858
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.25,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 2936,
+      "steps_simulated": 3435,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 231371919
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.25,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 2729,
+      "steps_simulated": 3228,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 1319935422
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.25,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 4126,
+      "steps_simulated": 4625,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 1967120457
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.25,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 3519,
+      "steps_simulated": 4018,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 2094130101
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.3,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 4166,
+      "steps_simulated": 4665,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 494380780
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.3,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 2643,
+      "steps_simulated": 3142,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 507784189
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.3,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 3420,
+      "steps_simulated": 3919,
+      "final_magnetization": 1.0000000000000007,
+      "seed": 80342852
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.3,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 7350,
+      "steps_simulated": 7849,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 303358152
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.3,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 2643,
+      "steps_simulated": 3142,
+      "final_magnetization": 0.9920000000000005,
+      "seed": 1191536604
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.35,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 2629,
+      "steps_simulated": 3128,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 1174251111
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.35,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 5108,
+      "steps_simulated": 5607,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 796549538
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.35,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 2837,
+      "steps_simulated": 3336,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 665624237
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.35,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 2866,
+      "steps_simulated": 3365,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 1781959903
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.35,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 1613,
+      "steps_simulated": 2112,
+      "final_magnetization": 0.9920000000000004,
+      "seed": 987915346
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.4,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 2282,
+      "steps_simulated": 2781,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 1735706818
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.4,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 2640,
+      "steps_simulated": 3139,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 2068481737
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.4,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 2381,
+      "steps_simulated": 2880,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 681050585
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.4,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 3112,
+      "steps_simulated": 3611,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 435377212
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.4,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 2315,
+      "steps_simulated": 2814,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 2046335868
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.45,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 1607,
+      "steps_simulated": 2106,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 1363289380
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.45,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 1690,
+      "steps_simulated": 2189,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 624741299
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.45,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 2208,
+      "steps_simulated": 2707,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 1335434157
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.45,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 2177,
+      "steps_simulated": 2676,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 1106076761
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.45,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 2066,
+      "steps_simulated": 2565,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 1944615568
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.5,
+      "replicate": 0,
+      "converged": true,
+      "stopping_time": 2552,
+      "steps_simulated": 3051,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 549680845
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.5,
+      "replicate": 1,
+      "converged": true,
+      "stopping_time": 1792,
+      "steps_simulated": 2291,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 2128978352
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.5,
+      "replicate": 2,
+      "converged": true,
+      "stopping_time": 2056,
+      "steps_simulated": 2555,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 2010138259
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.5,
+      "replicate": 3,
+      "converged": true,
+      "stopping_time": 1776,
+      "steps_simulated": 2275,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 388054582
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.5,
+      "replicate": 4,
+      "converged": true,
+      "stopping_time": 2514,
+      "steps_simulated": 3013,
+      "final_magnetization": 1.0000000000000004,
+      "seed": 353492596
+    }
+  ],
+  "aggregated_records": [
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.05,
+      "stopping_times": [
+        2123,
+        6231,
+        4317,
+        5898,
+        3955
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 4504.8,
+      "std_stopping_time": 1653.1252826086716,
+      "median_stopping_time": 4317.0,
+      "min_stopping_time": 2123.0,
+      "max_stopping_time": 6231.0
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.1,
+      "stopping_times": [
+        4358,
+        2509,
+        2739,
+        1746,
+        3511
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 2972.6,
+      "std_stopping_time": 997.9039532941033,
+      "median_stopping_time": 2739.0,
+      "min_stopping_time": 1746.0,
+      "max_stopping_time": 4358.0
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.15,
+      "stopping_times": [
+        4125,
+        4941,
+        2108,
+        3062,
+        1960
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 3239.2,
+      "std_stopping_time": 1287.257821883402,
+      "median_stopping_time": 3062.0,
+      "min_stopping_time": 1960.0,
+      "max_stopping_time": 4941.0
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.2,
+      "stopping_times": [
+        1783,
+        1652,
+        2387,
+        4830,
+        3792
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 2888.8,
+      "std_stopping_time": 1377.3433486244453,
+      "median_stopping_time": 2387.0,
+      "min_stopping_time": 1652.0,
+      "max_stopping_time": 4830.0
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.25,
+      "stopping_times": [
+        776,
+        2034,
+        2192,
+        2521,
+        1236
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 1751.8,
+      "std_stopping_time": 721.6849728240155,
+      "median_stopping_time": 2034.0,
+      "min_stopping_time": 776.0,
+      "max_stopping_time": 2521.0
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.3,
+      "stopping_times": [
+        1806,
+        3707,
+        1463,
+        2181,
+        2215
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 2274.4,
+      "std_stopping_time": 857.6659023186127,
+      "median_stopping_time": 2181.0,
+      "min_stopping_time": 1463.0,
+      "max_stopping_time": 3707.0
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.35,
+      "stopping_times": [
+        2456,
+        1301,
+        1987,
+        1338,
+        1133
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 1643.0,
+      "std_stopping_time": 558.8814722282356,
+      "median_stopping_time": 1338.0,
+      "min_stopping_time": 1133.0,
+      "max_stopping_time": 2456.0
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.4,
+      "stopping_times": [
+        1098,
+        1320,
+        744,
+        1315,
+        1571
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 1209.6,
+      "std_stopping_time": 309.49361867411744,
+      "median_stopping_time": 1315.0,
+      "min_stopping_time": 744.0,
+      "max_stopping_time": 1571.0
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.45,
+      "stopping_times": [
+        1132,
+        1310,
+        1734,
+        1237,
+        1665
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 1415.6,
+      "std_stopping_time": 267.8885962485152,
+      "median_stopping_time": 1310.0,
+      "min_stopping_time": 1132.0,
+      "max_stopping_time": 1734.0
+    },
+    {
+      "phase": "eval",
+      "N": 150,
+      "rho": 0.5,
+      "stopping_times": [
+        772,
+        763,
+        1429,
+        1079,
+        948
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 998.2,
+      "std_stopping_time": 274.37328587163876,
+      "median_stopping_time": 948.0,
+      "min_stopping_time": 763.0,
+      "max_stopping_time": 1429.0
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.05,
+      "stopping_times": [
+        16003,
+        16505,
+        21275,
+        9656,
+        18019
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 16291.6,
+      "std_stopping_time": 4241.998444129842,
+      "median_stopping_time": 16505.0,
+      "min_stopping_time": 9656.0,
+      "max_stopping_time": 21275.0
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.1,
+      "stopping_times": [
+        12354,
+        7048,
+        14679,
+        18233,
+        8212
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 12105.2,
+      "std_stopping_time": 4608.919580552475,
+      "median_stopping_time": 12354.0,
+      "min_stopping_time": 7048.0,
+      "max_stopping_time": 18233.0
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.15,
+      "stopping_times": [
+        5592,
+        4724,
+        4779,
+        4891,
+        6021
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 5201.4,
+      "std_stopping_time": 575.9759543592077,
+      "median_stopping_time": 4891.0,
+      "min_stopping_time": 4724.0,
+      "max_stopping_time": 6021.0
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.2,
+      "stopping_times": [
+        4244,
+        4218,
+        5873,
+        4090,
+        4937
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 4672.4,
+      "std_stopping_time": 748.4399107476833,
+      "median_stopping_time": 4244.0,
+      "min_stopping_time": 4090.0,
+      "max_stopping_time": 5873.0
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.25,
+      "stopping_times": [
+        3081,
+        2936,
+        2729,
+        4126,
+        3519
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 3278.2,
+      "std_stopping_time": 555.508505785465,
+      "median_stopping_time": 3081.0,
+      "min_stopping_time": 2729.0,
+      "max_stopping_time": 4126.0
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.3,
+      "stopping_times": [
+        4166,
+        2643,
+        3420,
+        7350,
+        2643
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 4044.4,
+      "std_stopping_time": 1953.1703202741946,
+      "median_stopping_time": 3420.0,
+      "min_stopping_time": 2643.0,
+      "max_stopping_time": 7350.0
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.35,
+      "stopping_times": [
+        2629,
+        5108,
+        2837,
+        2866,
+        1613
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 3010.6,
+      "std_stopping_time": 1279.554336478135,
+      "median_stopping_time": 2837.0,
+      "min_stopping_time": 1613.0,
+      "max_stopping_time": 5108.0
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.4,
+      "stopping_times": [
+        2282,
+        2640,
+        2381,
+        3112,
+        2315
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 2546.0,
+      "std_stopping_time": 346.2203055859087,
+      "median_stopping_time": 2381.0,
+      "min_stopping_time": 2282.0,
+      "max_stopping_time": 3112.0
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.45,
+      "stopping_times": [
+        1607,
+        1690,
+        2208,
+        2177,
+        2066
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 1949.6,
+      "std_stopping_time": 281.42370191581233,
+      "median_stopping_time": 2066.0,
+      "min_stopping_time": 1607.0,
+      "max_stopping_time": 2208.0
+    },
+    {
+      "phase": "eval",
+      "N": 250,
+      "rho": 0.5,
+      "stopping_times": [
+        2552,
+        1792,
+        2056,
+        1776,
+        2514
+      ],
+      "n_total": 5,
+      "n_converged": 5,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 2138.0,
+      "std_stopping_time": 377.5764823184834,
+      "median_stopping_time": 2056.0,
+      "min_stopping_time": 1776.0,
+      "max_stopping_time": 2552.0
+    }
+  ],
+  "predictions": [
+    {
+      "N": 150,
+      "rho": 0.05,
+      "predicted_tau": 8124.206614672422
+    },
+    {
+      "N": 150,
+      "rho": 0.1,
+      "predicted_tau": 5142.550302426362
+    },
+    {
+      "N": 150,
+      "rho": 0.15,
+      "predicted_tau": 3761.8995892694916
+    },
+    {
+      "N": 150,
+      "rho": 0.2,
+      "predicted_tau": 2965.6847649306646
+    },
+    {
+      "N": 150,
+      "rho": 0.25,
+      "predicted_tau": 2447.6367389522375
+    },
+    {
+      "N": 150,
+      "rho": 0.3,
+      "predicted_tau": 2083.661239960079
+    },
+    {
+      "N": 150,
+      "rho": 0.35,
+      "predicted_tau": 1813.9221808857149
+    },
+    {
+      "N": 150,
+      "rho": 0.4,
+      "predicted_tau": 1606.0163424667358
+    },
+    {
+      "N": 150,
+      "rho": 0.45,
+      "predicted_tau": 1440.8686785670354
+    },
+    {
+      "N": 150,
+      "rho": 0.5,
+      "predicted_tau": 1306.518558873849
+    },
+    {
+      "N": 250,
+      "rho": 0.05,
+      "predicted_tau": 13540.34435778737
+    },
+    {
+      "N": 250,
+      "rho": 0.1,
+      "predicted_tau": 8570.917170710603
+    },
+    {
+      "N": 250,
+      "rho": 0.15,
+      "predicted_tau": 6269.832648782486
+    },
+    {
+      "N": 250,
+      "rho": 0.2,
+      "predicted_tau": 4942.807941551107
+    },
+    {
+      "N": 250,
+      "rho": 0.25,
+      "predicted_tau": 4079.3945649203956
+    },
+    {
+      "N": 250,
+      "rho": 0.3,
+      "predicted_tau": 3472.7687332667983
+    },
+    {
+      "N": 250,
+      "rho": 0.35,
+      "predicted_tau": 3023.203634809525
+    },
+    {
+      "N": 250,
+      "rho": 0.4,
+      "predicted_tau": 2676.6939041112264
+    },
+    {
+      "N": 250,
+      "rho": 0.45,
+      "predicted_tau": 2401.4477976117255
+    },
+    {
+      "N": 250,
+      "rho": 0.5,
+      "predicted_tau": 2177.530931456415
+    }
+  ]
+}

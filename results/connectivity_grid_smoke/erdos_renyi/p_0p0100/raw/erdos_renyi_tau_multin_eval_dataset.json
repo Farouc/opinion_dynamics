@@ -1,0 +1,194 @@
+{
+  "experiment": "erdos_renyi_tau_multin_evaluation",
+  "config": {
+    "graph_type": "erdos_renyi",
+    "erdos_p": 0.01,
+    "barabasi_m": null,
+    "test_n_values": [
+      150
+    ],
+    "rho_values": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "test_seeds": 2,
+    "T_max": 20000,
+    "stable_window": 300,
+    "tol": 1e-12
+  },
+  "seed_records": [
+    {
+      "phase": "eval",
+      "graph_type": "erdos_renyi",
+      "graph_seed": 1540770719,
+      "N": 150,
+      "rho": 0.1,
+      "replicate": 0,
+      "erdos_p": 0.01,
+      "barabasi_m": null,
+      "converged": true,
+      "stopping_time": 3594,
+      "steps_simulated": 3893,
+      "final_magnetization": 0.4799999999999996,
+      "seed": 1688060240
+    },
+    {
+      "phase": "eval",
+      "graph_type": "erdos_renyi",
+      "graph_seed": 1540770719,
+      "N": 150,
+      "rho": 0.1,
+      "replicate": 1,
+      "erdos_p": 0.01,
+      "barabasi_m": null,
+      "converged": true,
+      "stopping_time": 4395,
+      "steps_simulated": 4694,
+      "final_magnetization": 0.7066666666666659,
+      "seed": 1102145672
+    },
+    {
+      "phase": "eval",
+      "graph_type": "erdos_renyi",
+      "graph_seed": 1540770719,
+      "N": 150,
+      "rho": 0.2,
+      "replicate": 0,
+      "erdos_p": 0.01,
+      "barabasi_m": null,
+      "converged": true,
+      "stopping_time": 2938,
+      "steps_simulated": 3237,
+      "final_magnetization": 0.666666666666666,
+      "seed": 275121930
+    },
+    {
+      "phase": "eval",
+      "graph_type": "erdos_renyi",
+      "graph_seed": 1540770719,
+      "N": 150,
+      "rho": 0.2,
+      "replicate": 1,
+      "erdos_p": 0.01,
+      "barabasi_m": null,
+      "converged": true,
+      "stopping_time": 4944,
+      "steps_simulated": 5243,
+      "final_magnetization": 0.8133333333333324,
+      "seed": 1803345590
+    },
+    {
+      "phase": "eval",
+      "graph_type": "erdos_renyi",
+      "graph_seed": 1540770719,
+      "N": 150,
+      "rho": 0.3,
+      "replicate": 0,
+      "erdos_p": 0.01,
+      "barabasi_m": null,
+      "converged": true,
+      "stopping_time": 3800,
+      "steps_simulated": 4099,
+      "final_magnetization": 0.7733333333333327,
+      "seed": 967196436
+    },
+    {
+      "phase": "eval",
+      "graph_type": "erdos_renyi",
+      "graph_seed": 1540770719,
+      "N": 150,
+      "rho": 0.3,
+      "replicate": 1,
+      "erdos_p": 0.01,
+      "barabasi_m": null,
+      "converged": true,
+      "stopping_time": 1728,
+      "steps_simulated": 2027,
+      "final_magnetization": 0.7866666666666658,
+      "seed": 1074497555
+    }
+  ],
+  "aggregated_records": [
+    {
+      "phase": "eval",
+      "graph_type": "erdos_renyi",
+      "graph_seed": 1540770719,
+      "N": 150,
+      "rho": 0.1,
+      "erdos_p": 0.01,
+      "barabasi_m": null,
+      "stopping_times": [
+        3594,
+        4395
+      ],
+      "n_total": 2,
+      "n_converged": 2,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 3994.5,
+      "std_stopping_time": 566.3925317304246,
+      "median_stopping_time": 3994.5,
+      "min_stopping_time": 3594.0,
+      "max_stopping_time": 4395.0
+    },
+    {
+      "phase": "eval",
+      "graph_type": "erdos_renyi",
+      "graph_seed": 1540770719,
+      "N": 150,
+      "rho": 0.2,
+      "erdos_p": 0.01,
+      "barabasi_m": null,
+      "stopping_times": [
+        2938,
+        4944
+      ],
+      "n_total": 2,
+      "n_converged": 2,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 3941.0,
+      "std_stopping_time": 1418.4562030602144,
+      "median_stopping_time": 3941.0,
+      "min_stopping_time": 2938.0,
+      "max_stopping_time": 4944.0
+    },
+    {
+      "phase": "eval",
+      "graph_type": "erdos_renyi",
+      "graph_seed": 1540770719,
+      "N": 150,
+      "rho": 0.3,
+      "erdos_p": 0.01,
+      "barabasi_m": null,
+      "stopping_times": [
+        3800,
+        1728
+      ],
+      "n_total": 2,
+      "n_converged": 2,
+      "converged_fraction": 1.0,
+      "mean_stopping_time": 2764.0,
+      "std_stopping_time": 1465.1252506185265,
+      "median_stopping_time": 2764.0,
+      "min_stopping_time": 1728.0,
+      "max_stopping_time": 3800.0
+    }
+  ],
+  "predictions": [
+    {
+      "N": 150,
+      "rho": 0.1,
+      "predicted_tau": 4620.352272254835
+    },
+    {
+      "N": 150,
+      "rho": 0.2,
+      "predicted_tau": 3335.6355904206457
+    },
+    {
+      "N": 150,
+      "rho": 0.3,
+      "predicted_tau": 2854.0082713178736
+    }
+  ]
+}

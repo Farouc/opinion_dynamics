@@ -1,9 +1,0 @@
-{
-  "rho_var_peak": 0.05,
-  "rho_slope_peak": 0.0,
-  "rho_c_estimate": 0.025,
-  "var_peak_index": 1.0,
-  "slope_peak_index": 0.0,
-  "max_var": 0.023324005185571428,
-  "max_abs_dm_drho": 12.09979765625
-}

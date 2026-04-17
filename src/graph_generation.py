@@ -18,6 +18,12 @@ def generate_erdos_renyi(n: int, p: float, seed: int | None = None) -> nx.Graph:
     return _to_integer_labels(G)
 
 
+def generate_fully_connected(n: int) -> nx.Graph:
+    """Generate a fully connected (complete) graph on n nodes."""
+    G = nx.complete_graph(n=n)
+    return _to_integer_labels(G)
+
+
 def generate_barabasi_albert(n: int, m: int, seed: int | None = None) -> nx.Graph:
     """Generate a Barabasi-Albert preferential attachment graph."""
     G = nx.barabasi_albert_graph(n=n, m=m, seed=seed)
@@ -34,10 +40,13 @@ def create_graph_from_config(config: dict, seed: int | None = None) -> nx.Graph:
     """Create a graph from configuration entries.
 
     Expected keys:
-    - graph_type: one of {"erdos_renyi", "barabasi_albert", "grid_lattice"}
+    - graph_type: one of {"fully_connected", "erdos_renyi", "barabasi_albert", "grid_lattice"}
     - n, p, m, L depending on graph type
     """
     graph_type = str(config.get("graph_type", "erdos_renyi")).lower()
+
+    if graph_type == "fully_connected":
+        return generate_fully_connected(n=int(config["n"]))
 
     if graph_type == "erdos_renyi":
         return generate_erdos_renyi(
@@ -58,5 +67,5 @@ def create_graph_from_config(config: dict, seed: int | None = None) -> nx.Graph:
 
     raise ValueError(
         f"Unsupported graph_type='{graph_type}'. "
-        "Choose from {'erdos_renyi', 'barabasi_albert', 'grid_lattice'}."
+        "Choose from {'fully_connected', 'erdos_renyi', 'barabasi_albert', 'grid_lattice'}."
     )

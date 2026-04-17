@@ -1,0 +1,48 @@
+{
+  "rows": [
+    {
+      "graph_type": "erdos_renyi",
+      "param_name": "p",
+      "param_value": 0.01,
+      "expression": "(((x1 + -113.08747) * 9.181681) / (x0 - -0.019943643)) + 1794.6996",
+      "r2": 0.9957255889662169,
+      "rmse": 180.4209969652541,
+      "aic": 64.34351590418652,
+      "bic": 64.13527537341457,
+      "results_dir": "results/connectivity_grid_smoke/erdos_renyi/p_0p0100"
+    },
+    {
+      "graph_type": "erdos_renyi",
+      "param_name": "p",
+      "param_value": 0.02,
+      "expression": "((4.6398 / x0) - -7.7821417) * (x1 - 47.766327)",
+      "r2": 0.9713552456899579,
+      "rmse": 406.53247731771165,
+      "aic": 74.09196584956341,
+      "bic": 73.88372531879146,
+      "results_dir": "results/connectivity_grid_smoke/erdos_renyi/p_0p0200"
+    },
+    {
+      "graph_type": "barabasi_albert",
+      "param_name": "m",
+      "param_value": 2,
+      "expression": "((x1 / -0.07576142) * log(x0)) - 847.388",
+      "r2": 0.9963945604821315,
+      "rmse": 88.49065615398052,
+      "aic": 55.79476359510672,
+      "bic": 55.58652306433478,
+      "results_dir": "results/connectivity_grid_smoke/barabasi_albert/m_2"
+    },
+    {
+      "graph_type": "barabasi_albert",
+      "param_name": "m",
+      "param_value": 3,
+      "expression": "(((x1 + -83.22883) / (x0 - 0.0585307)) + 260.36957) / 0.3441872",
+      "r2": 0.991101080293294,
+      "rmse": 253.69954253819907,
+      "aic": 68.43380796131818,
+      "bic": 68.22556743054623,
+      "results_dir": "results/connectivity_grid_smoke/barabasi_albert/m_3"
+    }
+  ]
+}

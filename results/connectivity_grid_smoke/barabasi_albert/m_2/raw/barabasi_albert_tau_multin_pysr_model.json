@@ -1,0 +1,154 @@
+{
+  "regression_method": "pysr_multivariate",
+  "model_type": "pysr_symbolic_regression",
+  "expression": "((x1 / -0.07576142) * log(x0)) - 847.388",
+  "metrics": {
+    "rss": 46983.57735937207,
+    "rmse": 88.49065615398052,
+    "r2": 0.9963945604821315,
+    "aic": 55.79476359510672,
+    "bic": 55.58652306433478
+  },
+  "pysr_params": {
+    "niterations": 80,
+    "population_size": 20,
+    "maxsize": 12,
+    "binary_operators": [
+      "+",
+      "-",
+      "*",
+      "/"
+    ],
+    "unary_operators": [
+      "log",
+      "exp"
+    ],
+    "model_selection": "best",
+    "seed": 42
+  },
+  "best_equation_info": {
+    "complexity": 8,
+    "loss": 7830.5786,
+    "equation": "((x1 / -0.07576142) * log(x0)) - 847.388",
+    "score": 2.5494407204143985,
+    "sympy_format": "-13.1993302131877*x1*log(x0) - 847.388",
+    "lambda_format": "PySRFunction(X=>-13.1993302131877*x1*log(x0) - 847.388)"
+  },
+  "equations_top": [
+    {
+      "complexity": 12,
+      "loss": 5684.844,
+      "equation": "(((log(x0 * x0) / -0.15892631) + 1.6554996) * x1) - 937.031",
+      "score": 0.013557638937163257,
+      "sympy_format": "x1*(1.6554996 - 6.29222436486445*log(x0**2)) - 937.031",
+      "lambda_format": "PySRFunction(X=>x1*(1.6554996 - 6.29222436486445*log(x0**2)) - 937.031)"
+    },
+    {
+      "complexity": 10,
+      "loss": 5841.099,
+      "equation": "(log(x0) * ((x1 + -7.5045643) / -0.07426191)) + -743.01324",
+      "score": 0.13851267038634898,
+      "sympy_format": "(101.055363375383 - 13.4658534907061*x1)*log(x0) - 743.01324",
+      "lambda_format": "PySRFunction(X=>(101.055363375383 - 13.4658534907061*x1)*log(x0) - 743.01324)"
+    },
+    {
+      "complexity": 9,
+      "loss": 6708.8774,
+      "equation": "((x1 / (x0 + 0.14641841)) * 7.5856204) - 954.5773",
+      "score": 0.1546047680937469,
+      "sympy_format": "x1*7.5856204/(x0 + 0.14641841) - 1*954.5773",
+      "lambda_format": "PySRFunction(X=>x1*7.5856204/(x0 + 0.14641841) - 1*954.5773)"
+    },
+    {
+      "complexity": 8,
+      "loss": 7830.5786,
+      "equation": "((x1 / -0.07576142) * log(x0)) - 847.388",
+      "score": 2.5494407204143985,
+      "sympy_format": "-13.1993302131877*x1*log(x0) - 847.388",
+      "lambda_format": "PySRFunction(X=>-13.1993302131877*x1*log(x0) - 847.388)"
+    },
+    {
+      "complexity": 7,
+      "loss": 100230.96,
+      "equation": "(x1 / (x0 + 0.071370654)) * 4.3026986",
+      "score": 0.20121377968088272,
+      "sympy_format": "x1*4.3026986/(x0 + 0.071370654)",
+      "lambda_format": "PySRFunction(X=>x1*4.3026986/(x0 + 0.071370654))"
+    },
+    {
+      "complexity": 6,
+      "loss": 122571.055,
+      "equation": "(x1 * log(x0)) / -0.096009575",
+      "score": 0.6524805022481137,
+      "sympy_format": "-10.4156278162881*x1*log(x0)",
+      "lambda_format": "PySRFunction(X=>-10.4156278162881*x1*log(x0))"
+    },
+    {
+      "complexity": 5,
+      "loss": 235372.98,
+      "equation": "x1 / (x0 / 2.710432)",
+      "score": 0.6835314776312754,
+      "sympy_format": "x1/((x0/2.710432))",
+      "lambda_format": "PySRFunction(X=>x1/((x0/2.710432)))"
+    },
+    {
+      "complexity": 3,
+      "loss": 923558.7,
+      "equation": "x1 * 17.48541",
+      "score": 0.42755791019519424,
+      "sympy_format": "x1*17.48541",
+      "lambda_format": "PySRFunction(X=>x1*17.48541)"
+    },
+    {
+      "complexity": 1,
+      "loss": 2171883.8,
+      "equation": "2529.0867",
+      "score": 0.0,
+      "sympy_format": "2529.08670000000",
+      "lambda_format": "PySRFunction(X=>2529.08670000000)"
+    }
+  ],
+  "feature_names": [
+    "rho",
+    "N"
+  ],
+  "graph_type": "barabasi_albert",
+  "graph_params": {
+    "erdos_p": null,
+    "barabasi_m": 2
+  },
+  "fit_data": {
+    "rho": [
+      0.1,
+      0.2,
+      0.3,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "N": [
+      100.0,
+      100.0,
+      100.0,
+      200.0,
+      200.0,
+      200.0
+    ],
+    "mean_tau": [
+      2156.5,
+      1158.0,
+      804.5,
+      5165.5,
+      3554.0,
+      2336.0
+    ],
+    "predicted_tau": [
+      2191.8700986391914,
+      1276.962246384116,
+      741.775461199565,
+      5231.128197278383,
+      3401.312492768232,
+      2330.93892239913
+    ]
+  }
+}

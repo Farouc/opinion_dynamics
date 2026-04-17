@@ -1,0 +1,130 @@
+{
+  "regression_method": "pysr_multivariate",
+  "model_type": "pysr_symbolic_regression",
+  "expression": "(((x1 + -83.22883) / (x0 - 0.0585307)) + 260.36957) / 0.3441872",
+  "metrics": {
+    "rss": 386180.74730454886,
+    "rmse": 253.69954253819907,
+    "r2": 0.991101080293294,
+    "aic": 68.43380796131818,
+    "bic": 68.22556743054623
+  },
+  "pysr_params": {
+    "niterations": 80,
+    "population_size": 20,
+    "maxsize": 12,
+    "binary_operators": [
+      "+",
+      "-",
+      "*",
+      "/"
+    ],
+    "unary_operators": [
+      "log",
+      "exp"
+    ],
+    "model_selection": "best",
+    "seed": 42
+  },
+  "best_equation_info": {
+    "complexity": 11,
+    "loss": 64363.438,
+    "equation": "(((x1 + -83.22883) / (x0 - 0.0585307)) + 260.36957) / 0.3441872",
+    "score": 0.5733635213000784,
+    "sympy_format": "(260.36957 + (x1 - 83.22883)/(x0 - 1*0.0585307))/0.3441872",
+    "lambda_format": "PySRFunction(X=>(260.36957 + (x1 - 83.22883)/(x0 - 1*0.0585307))/0.3441872)"
+  },
+  "equations_top": [
+    {
+      "complexity": 11,
+      "loss": 64363.438,
+      "equation": "(((x1 + -83.22883) / (x0 - 0.0585307)) + 260.36957) / 0.3441872",
+      "score": 0.5733635213000784,
+      "sympy_format": "(260.36957 + (x1 - 83.22883)/(x0 - 1*0.0585307))/0.3441872",
+      "lambda_format": "PySRFunction(X=>(260.36957 + (x1 - 83.22883)/(x0 - 1*0.0585307))/0.3441872)"
+    },
+    {
+      "complexity": 9,
+      "loss": 202607.94,
+      "equation": "((x1 + -63.757183) / (x0 - 0.043125335)) / 0.26970077",
+      "score": 0.46934592143632176,
+      "sympy_format": "(x1 - 63.757183)/(0.26970077*(x0 - 1*0.043125335))",
+      "lambda_format": "PySRFunction(X=>(x1 - 63.757183)/(0.26970077*(x0 - 1*0.043125335)))"
+    },
+    {
+      "complexity": 7,
+      "loss": 517994.5,
+      "equation": "(x1 + -61.031364) / (x0 / 5.8802276)",
+      "score": 0.377558717999491,
+      "sympy_format": "(x1 - 61.031364)/((x0/5.8802276))",
+      "lambda_format": "PySRFunction(X=>(x1 - 61.031364)/((x0/5.8802276)))"
+    },
+    {
+      "complexity": 5,
+      "loss": 1102220.5,
+      "equation": "(x1 / x0) * 3.7270303",
+      "score": 0.6966310261481883,
+      "sympy_format": "x1*3.7270303/x0",
+      "lambda_format": "PySRFunction(X=>x1*3.7270303/x0)"
+    },
+    {
+      "complexity": 3,
+      "loss": 4439709.0,
+      "equation": "523.16547 / x0",
+      "score": 0.24401358573192236,
+      "sympy_format": "523.16547/x0",
+      "lambda_format": "PySRFunction(X=>523.16547/x0)"
+    },
+    {
+      "complexity": 1,
+      "loss": 7232726.0,
+      "equation": "3102.4363",
+      "score": 0.0,
+      "sympy_format": "3102.43630000000",
+      "lambda_format": "PySRFunction(X=>3102.43630000000)"
+    }
+  ],
+  "feature_names": [
+    "rho",
+    "N"
+  ],
+  "graph_type": "barabasi_albert",
+  "graph_params": {
+    "erdos_p": null,
+    "barabasi_m": 3
+  },
+  "fit_data": {
+    "rho": [
+      0.1,
+      0.2,
+      0.3,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "N": [
+      100.0,
+      100.0,
+      100.0,
+      200.0,
+      200.0,
+      200.0
+    ],
+    "mean_tau": [
+      2088.0,
+      1101.0,
+      1442.0,
+      8991.5,
+      2802.5,
+      2189.5
+    ],
+    "predicted_tau": [
+      1931.487645211767,
+      1100.9109587153812,
+      958.2699116533961,
+      8937.623915666549,
+      3154.639695906917,
+      2161.4852555516495
+    ]
+  }
+}
