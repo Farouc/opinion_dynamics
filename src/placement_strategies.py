@@ -142,7 +142,50 @@ def _eigenvector_dict(G: nx.Graph) -> dict[int, float]:
     try:
         e = nx.eigenvector_centrality_numpy(G)
     except Exception:
-        e = nx.eigenvector_centrality(G, max_iter=500, tol=1e-8)
+        try:
+            # Larger iteration budget for sparse/ill-conditioned cases.
+            e = nx.eigenvector_centrality(
+                G,
+                max_iter=5000,
+                tol=1e-8,
+                nstart={node: 1.0 for node in G.nodes()},
+            )
+        except Exception:
+            # Robust fallback for disconnected graphs or persistent convergence issues:
+            # compute per connected component, then weight by component size so tiny
+            # components do not dominate global ranking.
+            n_total = max(1, G.number_of_nodes())
+            e = {}
+            for comp_nodes in nx.connected_components(G):
+                comp = G.subgraph(comp_nodes).copy()
+                comp_size = comp.number_of_nodes()
+                comp_weight = float(comp_size / n_total)
+
+                try:
+                    local = nx.eigenvector_centrality_numpy(comp)
+                except Exception:
+                    try:
+                        local = nx.eigenvector_centrality(
+                            comp,
+                            max_iter=5000,
+                            tol=1e-8,
+                            nstart={node: 1.0 for node in comp.nodes()},
+                        )
+                    except Exception:
+                        # Last-resort stable fallback: degree-proportional score.
+                        deg = {int(node): float(comp.degree(node)) for node in comp.nodes()}
+                        deg_sum = float(sum(deg.values()))
+                        if deg_sum <= 0.0:
+                            local = {int(node): float(1.0 / comp_size) for node in comp.nodes()}
+                        else:
+                            local = {int(node): float(val / deg_sum) for node, val in deg.items()}
+
+                for node, score in local.items():
+                    e[int(node)] = float(score) * comp_weight
+
+            LOGGER.warning(
+                "Eigenvector centrality fallback path used (component-wise/degree fallback)."
+            )
 
     out = {int(node): float(score) for node, score in e.items()}
     G.graph[cache_key] = out

@@ -1,0 +1,30 @@
+{
+  "n_rows": 4,
+  "graph_specs": [
+    {
+      "graph_type": "erdos_renyi",
+      "n": 150,
+      "p": 0.01
+    }
+  ],
+  "n_pos_values": [
+    6,
+    10
+  ],
+  "n_neg_values": [
+    6,
+    10
+  ],
+  "strategy_pos_list": [
+    "highest_eigenvector"
+  ],
+  "strategy_neg_list": [
+    "random"
+  ],
+  "T": 4000,
+  "burn_in": 1000,
+  "n_runs": 1,
+  "threshold": 0.0,
+  "wl_n_iter": 3,
+  "seed": 42
+}

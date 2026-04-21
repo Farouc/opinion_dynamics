@@ -1,0 +1,52 @@
+{
+  "ranking": [
+    {
+      "candidate": "mean_delta_psi_centrality",
+      "pearson_corr": 0.9371675998263518,
+      "spearman_corr": 0.9283128275976547,
+      "abs_spearman": 0.9283128275976547
+    },
+    {
+      "candidate": "mean_delta_psi_degree",
+      "pearson_corr": 0.9387501427710822,
+      "spearman_corr": 0.9283128275976547,
+      "abs_spearman": 0.9283128275976547
+    },
+    {
+      "candidate": "mean_delta_psi_degree_norm",
+      "pearson_corr": 0.9387501427710819,
+      "spearman_corr": 0.9283128275976547,
+      "abs_spearman": 0.9283128275976547
+    },
+    {
+      "candidate": "mean_delta_psi_dispersion",
+      "pearson_corr": -0.9147506458592017,
+      "spearman_corr": -0.8997980991048941,
+      "abs_spearman": 0.8997980991048941
+    },
+    {
+      "candidate": "mean_delta_psi_hybrid",
+      "pearson_corr": 0.9192718508396148,
+      "spearman_corr": 0.8997980991048941,
+      "abs_spearman": 0.8997980991048941
+    },
+    {
+      "candidate": "mean_delta_psi_rho",
+      "pearson_corr": 0.04326973083835142,
+      "spearman_corr": 0.029210311891849302,
+      "abs_spearman": 0.029210311891849302
+    },
+    {
+      "candidate": "mean_delta_psi_size",
+      "pearson_corr": 0.04326973083835146,
+      "spearman_corr": 0.029210311891849302,
+      "abs_spearman": 0.029210311891849302
+    },
+    {
+      "candidate": "mean_delta_psi_wl",
+      "pearson_corr": 0.04326973083835142,
+      "spearman_corr": 0.029210311891849302,
+      "abs_spearman": 0.029210311891849302
+    }
+  ]
+}
