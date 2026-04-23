@@ -1,0 +1,26 @@
+{
+  "barabasi_albert": {
+    "ratio_psi_rho": 0.24827567093277889,
+    "ratio_psi_degree_norm": 0.9268098682741555,
+    "ratio_psi_centrality": 0.921589337665215,
+    "ratio_psi_wl": 0.24827567093277889,
+    "ratio_psi_dispersion": -0.7742060317208671,
+    "ratio_psi_hybrid": 0.7713111700003812
+  },
+  "erdos_renyi": {
+    "ratio_psi_rho": 0.6413316147900011,
+    "ratio_psi_degree_norm": 0.8773369289832721,
+    "ratio_psi_centrality": 0.8795527298773167,
+    "ratio_psi_wl": 0.6413316147900011,
+    "ratio_psi_dispersion": -0.5683927106530015,
+    "ratio_psi_hybrid": 0.7089048978035772
+  },
+  "fully_connected": {
+    "ratio_psi_rho": 0.8775070935279234,
+    "ratio_psi_degree_norm": 0.8775070935279234,
+    "ratio_psi_centrality": 0.877507093527923,
+    "ratio_psi_wl": NaN,
+    "ratio_psi_dispersion": NaN,
+    "ratio_psi_hybrid": 0.875576239464148
+  }
+}

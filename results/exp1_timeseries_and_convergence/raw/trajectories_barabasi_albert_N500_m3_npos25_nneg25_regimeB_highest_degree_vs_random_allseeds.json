@@ -1,0 +1,18 @@
+{
+  "graph_spec": {
+    "graph_type": "barabasi_albert",
+    "n": 500,
+    "m": 3
+  },
+  "regime": "regimeB",
+  "n_pos": 25,
+  "n_neg": 25,
+  "strategy_pos": "highest_degree",
+  "strategy_neg": "random",
+  "T": 20000,
+  "burn_in": 4000,
+  "n_runs": 5,
+  "seed": 42,
+  "mean_m": 0.6808068000000004,
+  "P_plus_win": 1.0
+}

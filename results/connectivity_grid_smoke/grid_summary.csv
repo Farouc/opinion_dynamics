@@ -1,5 +1,0 @@
-graph_type,param_name,param_value,expression,r2,rmse,aic,bic,results_dir
-erdos_renyi,p,0.01,(((x1 + -113.08747) * 9.181681) / (x0 - -0.019943643)) + 1794.6996,0.9957255889662169,180.4209969652541,64.34351590418652,64.13527537341457,results/connectivity_grid_smoke/erdos_renyi/p_0p0100
-erdos_renyi,p,0.02,((4.6398 / x0) - -7.7821417) * (x1 - 47.766327),0.9713552456899579,406.53247731771165,74.09196584956341,73.88372531879146,results/connectivity_grid_smoke/erdos_renyi/p_0p0200
-barabasi_albert,m,2,((x1 / -0.07576142) * log(x0)) - 847.388,0.9963945604821315,88.49065615398052,55.79476359510672,55.58652306433478,results/connectivity_grid_smoke/barabasi_albert/m_2
-barabasi_albert,m,3,(((x1 + -83.22883) / (x0 - 0.0585307)) + 260.36957) / 0.3441872,0.991101080293294,253.69954253819907,68.43380796131818,68.22556743054623,results/connectivity_grid_smoke/barabasi_albert/m_3

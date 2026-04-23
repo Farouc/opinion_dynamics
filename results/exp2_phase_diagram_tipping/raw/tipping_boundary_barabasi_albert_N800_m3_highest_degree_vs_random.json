@@ -1,0 +1,10 @@
+{
+  "graph_spec": {
+    "graph_type": "barabasi_albert",
+    "n": 800,
+    "m": 3
+  },
+  "strategy_pos": "highest_degree",
+  "strategy_neg": "random",
+  "boundary_segments": []
+}

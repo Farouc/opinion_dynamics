@@ -1,0 +1,55 @@
+{
+  "best_metric": "ratio_psi_degree_norm",
+  "fits": {
+    "ratio_psi_rho": {
+      "a": 11.564496225579045,
+      "fit_ok": true
+    },
+    "ratio_psi_degree_norm": {
+      "a": 37.959687061492204,
+      "fit_ok": true
+    },
+    "ratio_psi_centrality": {
+      "a": 39.20623340452011,
+      "fit_ok": true
+    },
+    "ratio_psi_wl": {
+      "a": 6.825048899389219,
+      "fit_ok": true
+    },
+    "ratio_psi_dispersion": {
+      "a": -42.354707824438144,
+      "fit_ok": true
+    },
+    "ratio_psi_hybrid": {
+      "a": 77.15973470642298,
+      "fit_ok": true
+    }
+  },
+  "auc": {
+    "barabasi_albert": {
+      "ratio_psi_rho": 0.6361122262366743,
+      "ratio_psi_degree_norm": 0.9985280342566573,
+      "ratio_psi_centrality": 0.9971452785583657,
+      "ratio_psi_wl": 0.6361122262366743,
+      "ratio_psi_dispersion": 0.08577545831660645,
+      "ratio_psi_hybrid": 0.9338507515946296
+    },
+    "erdos_renyi": {
+      "ratio_psi_rho": 0.8515778855852827,
+      "ratio_psi_degree_norm": 0.993467505643883,
+      "ratio_psi_centrality": 0.993467505643883,
+      "ratio_psi_wl": 0.8515778855852827,
+      "ratio_psi_dispersion": 0.18555165954176472,
+      "ratio_psi_hybrid": 0.8894759594601086
+    },
+    "fully_connected": {
+      "ratio_psi_rho": 0.9883431257344301,
+      "ratio_psi_degree_norm": 0.9883431257344301,
+      "ratio_psi_centrality": 0.9883431257344301,
+      "ratio_psi_wl": 0.7150646298472385,
+      "ratio_psi_dispersion": 0.7150646298472385,
+      "ratio_psi_hybrid": 0.9883431257344301
+    }
+  }
+}

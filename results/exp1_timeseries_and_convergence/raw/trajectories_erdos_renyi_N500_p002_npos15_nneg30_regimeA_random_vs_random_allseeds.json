@@ -1,0 +1,18 @@
+{
+  "graph_spec": {
+    "graph_type": "erdos_renyi",
+    "n": 500,
+    "p": 0.02
+  },
+  "regime": "regimeA",
+  "n_pos": 15,
+  "n_neg": 30,
+  "strategy_pos": "random",
+  "strategy_neg": "random",
+  "T": 20000,
+  "burn_in": 4000,
+  "n_runs": 5,
+  "seed": 42,
+  "mean_m": -0.2875537000000002,
+  "P_plus_win": 0.0
+}
